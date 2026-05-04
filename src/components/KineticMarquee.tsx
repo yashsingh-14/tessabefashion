@@ -96,7 +96,7 @@ export default function KineticMarquee() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center px-6">
           <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">Since 2013</p>
-          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl lowercase tracking-tight text-black" style={{ letterSpacing: "-0.02em" }}>
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl lowercase tracking-tighter text-black leading-[0.9]" style={{ letterSpacing: "-0.04em" }}>
             The art of<br />being dressed
           </h2>
           <div className="w-16 h-[1px] bg-black/30 mx-auto mt-8" />

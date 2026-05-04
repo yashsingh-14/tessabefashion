@@ -147,18 +147,18 @@ export default function Navbar() {
               <Search className="w-4 h-4 stroke-[1.5] group-hover:opacity-70 transition-opacity" />
             </Link>
             
-            <button className="hidden md:flex items-center gap-2 group" style={{ opacity: 0 }}>
+            <Link href="/cart" className="hidden md:flex items-center gap-2 group" style={{ opacity: 0 }}>
               <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:opacity-70 transition-opacity">Cart</span>
               <ShoppingBag className="w-4 h-4 stroke-[1.5] group-hover:opacity-70 transition-opacity" />
-            </button>
+            </Link>
 
             {/* Mobile specific icons */}
             <Link href="/search" className="md:hidden" style={{ opacity: 0 }}>
               <Search className="w-5 h-5 stroke-[1.5]" />
             </Link>
-            <button className="md:hidden" style={{ opacity: 0 }}>
+            <Link href="/cart" className="md:hidden" style={{ opacity: 0 }}>
               <ShoppingBag className="w-5 h-5 stroke-[1.5]" />
-            </button>
+            </Link>
           </div>
         </div>
       </nav>

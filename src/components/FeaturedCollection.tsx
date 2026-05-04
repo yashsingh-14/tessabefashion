@@ -10,34 +10,34 @@ const shirts = [
     name: "The Signature Oxford",
     fabric: "Heavyweight Cotton",
     price: "$245",
-    image: "https://images.unsplash.com/photo-1596755094514-f87e32f85e23?q=80&w=1000&auto=format&fit=crop"
+    image: "/images/fabric-1.jpg"
   },
   {
     id: 2,
     name: "Riviera Poplin",
     fabric: "Silky Two-Ply",
     price: "$210",
-    image: "https://images.unsplash.com/photo-1626497764746-6dc36546b388?q=80&w=1000&auto=format&fit=crop"
+    image: "/images/fabric-2.jpg"
   },
   {
     id: 3,
     name: "Amalfi Linen",
     fabric: "Breathable Weave",
     price: "$280",
-    image: "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=1000&auto=format&fit=crop"
+    image: "/images/pexels-bem-partington-1065018897-20531142.jpg"
   },
   {
     id: 4,
     name: "Midnight Silk",
     fabric: "100% Mulberry Silk",
     price: "$450",
-    image: "https://images.unsplash.com/photo-1588359348347-9bc6cbbb689e?q=80&w=1000&auto=format&fit=crop"
+    image: "/images/pexels-chris-f-38966-7755387.jpg"
   }
 ];
 
 export default function FeaturedCollection() {
   return (
-    <section className="py-32 px-6 md:px-12 bg-[#F5F4F0]">
+    <section className="pt-12 pb-32 px-6 md:px-12 bg-[#E9E6E1]">
       <div className="max-w-7xl mx-auto">
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
