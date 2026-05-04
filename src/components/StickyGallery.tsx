@@ -51,22 +51,22 @@ export default function StickyGallery() {
   return (
     <section ref={sectionRef} className="relative">
       {/* Header - Full screen intro */}
-      <div ref={headerRef} className="h-screen w-full grid place-content-center bg-black px-6">
+      <div ref={headerRef} className="h-screen w-full grid place-content-center bg-white px-6">
         <div className="text-center">
-          <p className="gallery-anim text-xs uppercase tracking-[0.4em] text-white/30 mb-6">The Gallery</p>
-          <h2 className="gallery-anim font-serif text-4xl md:text-7xl lg:text-8xl lowercase tracking-tight leading-[0.95] text-white" style={{ letterSpacing: "-0.02em" }}>
+          <p className="gallery-anim text-xs uppercase tracking-[0.4em] text-gray-500 mb-6">The Gallery</p>
+          <h2 className="gallery-anim font-serif text-4xl md:text-7xl lg:text-8xl lowercase tracking-tight leading-[0.95] text-gray-900" style={{ letterSpacing: "-0.02em" }}>
             Craftsmanship<br />in every thread
           </h2>
-          <p className="gallery-anim text-sm text-white/40 mt-8 max-w-md mx-auto leading-relaxed">
+          <p className="gallery-anim text-sm text-gray-600 mt-8 max-w-md mx-auto leading-relaxed">
             A visual journey through our atelier — from raw cotton to finished luxury.
           </p>
-          <div className="gallery-anim w-16 h-[1px] bg-white/20 mx-auto mt-10" />
-          <p className="gallery-anim text-[10px] uppercase tracking-[0.3em] text-white/20 mt-6">Scroll to explore ↓</p>
+          <div className="gallery-anim w-16 h-[1px] bg-gray-300 mx-auto mt-10" />
+          <p className="gallery-anim text-[10px] uppercase tracking-[0.3em] text-gray-400 mt-6">Scroll to explore ↓</p>
         </div>
       </div>
 
       {/* Gallery Grid */}
-      <div className="bg-black w-full px-2 md:px-4 pb-4">
+      <div className="bg-white w-full px-2 md:px-4 pb-4">
         <div className="grid grid-cols-2 md:grid-cols-12 gap-2">
           {/* Left Column - Scrolls */}
           <div className="col-span-1 md:col-span-4 grid gap-2">
@@ -122,8 +122,8 @@ export default function StickyGallery() {
       </div>
 
       {/* Bottom Branding */}
-      <div className="bg-black py-20 text-center overflow-hidden">
-        <h3 className="font-serif text-[14vw] md:text-[10vw] uppercase leading-none bg-gradient-to-r from-neutral-600 to-neutral-800 bg-clip-text text-transparent font-semibold tracking-tight">
+      <div className="bg-white py-20 text-center overflow-hidden">
+        <h3 className="font-serif text-[14vw] md:text-[10vw] uppercase leading-none bg-gradient-to-r from-neutral-300 to-neutral-400 bg-clip-text text-transparent font-semibold tracking-tight">
           arama
         </h3>
       </div>

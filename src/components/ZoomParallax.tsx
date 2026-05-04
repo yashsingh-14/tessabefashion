@@ -31,11 +31,11 @@ export default function ZoomParallax({ images }: ZoomParallaxProps) {
 
 	return (
 		<div ref={container} className="relative h-[300vh]">
-			<div className="sticky top-0 h-screen overflow-hidden bg-black">
+			<div className="sticky top-0 h-screen overflow-hidden bg-white">
 				{/* Optional intro text overlaid at the center */}
-				<div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none text-white">
-					<p className="text-xs uppercase tracking-[0.4em] text-white/40 mb-4 mix-blend-difference">The Archives</p>
-					<h2 className="font-serif text-5xl md:text-7xl lg:text-8xl lowercase tracking-tight mix-blend-difference" style={{ letterSpacing: "-0.02em" }}>
+				<div className="absolute inset-0 flex flex-col items-center justify-center z-10 pointer-events-none text-gray-900">
+					<p className="text-xs uppercase tracking-[0.4em] text-gray-500 mb-4">The Archives</p>
+					<h2 className="font-serif text-5xl md:text-7xl lg:text-8xl lowercase tracking-tight drop-shadow-sm" style={{ letterSpacing: "-0.02em" }}>
 						Into the weave
 					</h2>
 				</div>
