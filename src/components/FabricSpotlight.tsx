@@ -15,18 +15,24 @@ const fabrics = [
     id: 1,
     name: "Egyptian Cotton",
     description: "Woven with an ultra-fine 120s two-ply yarn, delivering an exceptionally smooth, silk-like touch against the skin.",
-    image: "/images/fabric-1.jpg",
+    image: "/images/pexels-bem-partington-1065018897-20531142.jpg",
   },
   {
     id: 2,
     name: "Pure Irish Linen",
     description: "Breathable and naturally textured. The quintessential fabric for elegant, relaxed summer tailoring.",
-    image: "/images/fabric-2.jpg",
+    image: "/images/pexels-chris-f-38966-7755387.jpg",
   },
   {
     id: 3,
     name: "Brushed Flannel",
     description: "Expertly milled for a cashmere-soft finish. Providing warmth without sacrificing a sharp, tailored silhouette.",
+    image: "/images/fabric-2.jpg",
+  },
+  {
+    id: 4,
+    name: "Italian Poplin",
+    description: "A tightly woven, lustrous cotton poplin from the finest Italian mills. Crisp, refined, and impossibly smooth.",
     image: "/images/fabric-1.jpg",
   }
 ];
@@ -62,7 +68,7 @@ export default function FabricSpotlight() {
 
       <div 
         ref={sliderRef}
-        className="flex h-full w-[300vw]"
+        className="flex h-full w-[400vw]"
       >
         {fabrics.map((fabric, idx) => (
           <div key={fabric.id} className="w-[100vw] h-full flex items-center justify-center relative px-24">

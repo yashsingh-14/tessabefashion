@@ -83,7 +83,7 @@ export default function MaskedVideoReveal() {
             loop
             playsInline
           >
-            <source src="/videos/6272385-hd_1920_1080_30fps.mp4" type="video/mp4" />
+            <source src="/videos/8306452-uhd_4096_2160_25fps.mp4" type="video/mp4" />
           </video>
           {/* Dark overlay */}
           <div className="absolute inset-0 bg-black/30" />

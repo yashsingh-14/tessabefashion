@@ -14,8 +14,8 @@ const MOCK_PRODUCT = {
   description: "A masterclass in understated elegance. The Classic Oxford is meticulously tailored from the finest Italian cotton, featuring a timeless silhouette that transitions effortlessly from day to evening.",
   images: [
     { id: "img1", url: "/images/fabric-1.jpg", alt: "Shirt Front" },
-    { id: "img2", url: "/images/fabric-2.jpg", alt: "Fabric Detail" },
-    { id: "img3", url: "/images/fabric-1.jpg", alt: "Collar Detail" }
+    { id: "img2", url: "/images/pexels-bem-partington-1065018897-20531142.jpg", alt: "Fabric Detail" },
+    { id: "img3", url: "/images/pexels-chris-f-38966-7755387.jpg", alt: "Collar Detail" }
   ],
   collars: [
     { id: "spread", label: "Spread" },
