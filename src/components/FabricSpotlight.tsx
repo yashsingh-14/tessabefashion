@@ -63,7 +63,7 @@ export default function FabricSpotlight() {
   return (
     <section ref={sectionRef} className="h-screen w-full overflow-hidden bg-[#E9E6E1]">
       <div className="absolute top-12 left-12 z-10 mix-blend-difference">
-        <h2 className="font-serif text-3xl text-white uppercase tracking-[0.2em]">The Archives</h2>
+        <h2 className="font-serif font-bold text-3xl text-white uppercase tracking-[0.2em]">The Archives</h2>
       </div>
 
       <div 
@@ -84,7 +84,7 @@ export default function FabricSpotlight() {
               
               <div className="absolute bottom-12 left-12 max-w-md text-white">
                 <p className="text-xs uppercase tracking-[0.3em] mb-3 opacity-80">0{idx + 1} / 0{fabrics.length}</p>
-                <h3 className="font-serif text-4xl mb-4">{fabric.name}</h3>
+                <h3 className="font-serif font-bold text-4xl mb-4">{fabric.name}</h3>
                 <p className="text-sm font-light leading-relaxed opacity-0 translate-y-4 transition-all duration-700 group-hover:opacity-100 group-hover:translate-y-0">
                   {fabric.description}
                 </p>

@@ -63,7 +63,7 @@ export default function MaskedVideoReveal() {
           {/* Overlay Text */}
           <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
             <p className="text-xs uppercase tracking-[0.4em] opacity-70 mb-4">From Mill to Wardrobe</p>
-            <h3 className="font-serif text-3xl md:text-5xl lowercase tracking-tight mb-4">
+            <h3 className="font-serif font-bold text-3xl md:text-5xl lowercase tracking-tight mb-4">
               Where tradition meets precision
             </h3>
             <div className="w-12 h-[1px] bg-white/40 mt-2" />

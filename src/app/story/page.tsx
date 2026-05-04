@@ -47,13 +47,13 @@ export default function StoryPage() {
   }, []);
 
   return (
-    <main className="min-h-screen bg-[#E9E6E1] text-black relative">
+    <main className="min-h-screen bg-transparent text-black relative">
       <Navbar />
       <section className="relative pt-40 pb-32 px-6 md:px-12 overflow-hidden">
         <div ref={heroRef} className="max-w-7xl mx-auto">
-          <p className="hero-anim text-xs uppercase tracking-[0.4em] text-black/40 mb-6">Our Story</p>
-          <h1 className="hero-anim font-serif text-6xl md:text-8xl lg:text-9xl lowercase tracking-tight mb-10" style={{ letterSpacing: "-0.02em" }}>Born from<br />obsession</h1>
-          <p className="hero-anim text-sm md:text-base text-black/50 max-w-xl leading-relaxed">Founded in November 2013 in the heart of Mumbai&apos;s textile district, Arama Tessile LLP was born from a deeply personal obsession with the feeling of extraordinary fabric against skin. What began as a small manufacturing operation on Kalbadevi Road has grown into a ₹50Cr+ enterprise serving garment makers across 15 countries.</p>
+          <p className="hero-anim text-xs uppercase tracking-[0.4em] text-black/70 font-bold mb-6">Our Story</p>
+          <h1 className="hero-anim font-serif font-bold text-6xl md:text-8xl lg:text-9xl lowercase tracking-tight mb-10" style={{ letterSpacing: "-0.02em" }}>Born from<br />obsession</h1>
+          <p className="hero-anim text-sm md:text-base text-black/80 font-medium max-w-xl leading-relaxed">Founded in November 2013 in the heart of Mumbai&apos;s textile district, Arama Tessile LLP was born from a deeply personal obsession with the feeling of extraordinary fabric against skin. What began as a small manufacturing operation on Kalbadevi Road has grown into a ₹50Cr+ enterprise serving garment makers across 15 countries.</p>
         </div>
       </section>
 
@@ -64,11 +64,11 @@ export default function StoryPage() {
 
       <section className="py-32 md:py-48 px-6 md:px-12">
         <div ref={quoteRef} className="max-w-4xl mx-auto text-center">
-          <span className="font-serif text-8xl md:text-9xl text-black/5 leading-none block mb-8">&ldquo;</span>
-          <p className="font-serif text-2xl md:text-4xl leading-snug tracking-tight italic font-light mb-12 -mt-16" style={{ letterSpacing: "-0.01em" }}>We didn&apos;t start Arama to build a business. We started it because we couldn&apos;t find fabrics that matched our standards. So we decided to make them ourselves — from the finest mills in Italy, Ireland, and Egypt.</p>
+          <span className="font-serif font-bold text-8xl md:text-9xl text-black/5 leading-none block mb-8">&ldquo;</span>
+          <p className="font-serif font-bold text-2xl md:text-4xl leading-snug tracking-tight italic font-light mb-12 -mt-16" style={{ letterSpacing: "-0.01em" }}>We didn&apos;t start Arama to build a business. We started it because we couldn&apos;t find fabrics that matched our standards. So we decided to make them ourselves — from the finest mills in Italy, Ireland, and Egypt.</p>
           <div className="w-12 h-[1px] bg-black/20 mx-auto mb-6" />
           <p className="text-xs uppercase tracking-[0.3em] font-medium">Rahul & Anjlee Agarwal</p>
-          <p className="text-xs uppercase tracking-[0.2em] text-black/40 mt-1">Founders, Arama Tessile LLP</p>
+          <p className="text-xs uppercase tracking-[0.2em] text-black/70 font-bold mt-1">Founders, Arama Tessile LLP</p>
         </div>
       </section>
 
@@ -76,7 +76,7 @@ export default function StoryPage() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-24">
             <p className="text-xs uppercase tracking-[0.4em] text-white/30 mb-4">The Journey</p>
-            <h2 className="font-serif text-5xl md:text-7xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>Milestones</h2>
+            <h2 className="font-serif font-bold text-5xl md:text-7xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>Milestones</h2>
           </div>
           <div ref={timelineRef} className="relative">
             <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[1px] bg-white/10 hidden md:block" />
@@ -84,7 +84,7 @@ export default function StoryPage() {
               <div key={idx} className={`timeline-item flex flex-col md:flex-row items-start md:items-center gap-8 mb-20 ${idx % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}`}>
                 <div className={`flex-1 ${idx % 2 === 0 ? "md:text-right md:pr-16" : "md:text-left md:pl-16"}`}>
                   <p className="text-xs uppercase tracking-[0.3em] text-white/30 mb-3">{item.year}</p>
-                  <h3 className="font-serif text-3xl md:text-4xl lowercase tracking-tight mb-4" style={{ letterSpacing: "-0.02em" }}>{item.title}</h3>
+                  <h3 className="font-serif font-bold text-3xl md:text-4xl lowercase tracking-tight mb-4" style={{ letterSpacing: "-0.02em" }}>{item.title}</h3>
                   <p className="text-sm leading-relaxed text-white/50">{item.description}</p>
                 </div>
                 <div className="w-4 h-4 rounded-full border-2 border-white/30 bg-black flex-shrink-0 hidden md:block" />
@@ -95,11 +95,11 @@ export default function StoryPage() {
         </div>
       </section>
 
-      <section className="py-32 md:py-48 px-6 md:px-12 bg-[#E9E6E1]">
+      <section className="py-32 md:py-48 px-6 md:px-12 bg-transparent">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-20">
-            <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">What We Believe</p>
-            <h2 className="font-serif text-5xl md:text-7xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>Our values</h2>
+            <p className="text-xs uppercase tracking-[0.4em] text-black/70 font-bold mb-4">What We Believe</p>
+            <h2 className="font-serif font-bold text-5xl md:text-7xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>Our values</h2>
           </div>
           <div ref={valuesRef} className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
@@ -108,8 +108,8 @@ export default function StoryPage() {
               { title: "Timeless Over Trendy", desc: "We manufacture for decades, not seasons. An Arama fabric is engineered to look as impeccable after years of wear as it does the day it arrives from our loom." },
             ].map((value) => (
               <div key={value.title} className="value-card border-t border-black/10 pt-8">
-                <h3 className="font-serif text-2xl lowercase tracking-tight mb-4" style={{ letterSpacing: "-0.02em" }}>{value.title}</h3>
-                <p className="text-sm leading-relaxed text-black/50">{value.desc}</p>
+                <h3 className="font-serif font-bold text-2xl lowercase tracking-tight mb-4" style={{ letterSpacing: "-0.02em" }}>{value.title}</h3>
+                <p className="text-sm leading-relaxed text-black/80 font-medium">{value.desc}</p>
               </div>
             ))}
           </div>

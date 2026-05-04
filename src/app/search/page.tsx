@@ -60,15 +60,15 @@ export default function SearchPage() {
   }, [query]);
 
   return (
-    <main ref={containerRef} className="min-h-screen bg-[#E9E6E1] text-black relative">
+    <main ref={containerRef} className="min-h-screen bg-transparent text-black relative">
       <Navbar />
 
       <section className="pt-40 pb-20 px-6 md:px-12">
         <div className="max-w-5xl mx-auto">
           {/* Header */}
           <div className="search-header mb-16 text-center">
-            <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">Discovery</p>
-            <h1 className="font-serif text-5xl md:text-7xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>
+            <p className="text-xs uppercase tracking-[0.4em] text-black/70 font-bold mb-4">Discovery</p>
+            <h1 className="font-serif font-bold text-5xl md:text-7xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>
               What are you looking for?
             </h1>
           </div>
@@ -81,7 +81,7 @@ export default function SearchPage() {
                 ref={inputRef}
                 type="text"
                 placeholder="Search our archives..."
-                className="w-full bg-transparent text-2xl md:text-4xl font-serif lowercase tracking-tight focus:outline-none placeholder:text-black/10"
+                className="w-full bg-transparent text-2xl md:text-4xl font-serif font-bold lowercase tracking-tight focus:outline-none placeholder:text-black/10"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
               />
@@ -96,7 +96,7 @@ export default function SearchPage() {
           {/* Suggestions */}
           {!isSearching && (
             <div className="flex flex-wrap justify-center gap-3">
-              <span className="search-suggestion text-xs uppercase tracking-[0.2em] text-black/30 mr-2 py-2">Suggestions:</span>
+              <span className="search-suggestion text-xs uppercase tracking-[0.2em] text-black/90 font-medium font-medium mr-2 py-2">Suggestions:</span>
               {suggestions.map((s) => (
                 <button
                   key={s}
@@ -116,8 +116,8 @@ export default function SearchPage() {
         <section className="px-6 md:px-12 pb-32">
           <div ref={resultsRef} className="max-w-7xl mx-auto">
             <div className="flex justify-between items-end mb-12 border-b border-black/5 pb-6">
-              <p className="text-xs uppercase tracking-[0.3em] text-black/40">Results for &ldquo;{query}&rdquo;</p>
-              <p className="text-xs uppercase tracking-[0.3em] text-black/40">{mockResults.length} items found</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-black/70 font-bold">Results for &ldquo;{query}&rdquo;</p>
+              <p className="text-xs uppercase tracking-[0.3em] text-black/70 font-bold">{mockResults.length} items found</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -136,8 +136,8 @@ export default function SearchPage() {
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
                   </div>
-                  <p className="text-xs uppercase tracking-[0.2em] text-black/40 mb-2">{item.category}</p>
-                  <h3 className="font-serif text-lg lowercase tracking-tight mb-2">{item.name}</h3>
+                  <p className="text-xs uppercase tracking-[0.2em] text-black/70 font-bold mb-2">{item.category}</p>
+                  <h3 className="font-serif font-bold text-lg lowercase tracking-tight mb-2">{item.name}</h3>
                   <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.2em] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     View Details <ArrowRight className="w-3 h-3" />
                   </div>
@@ -151,7 +151,7 @@ export default function SearchPage() {
       {/* Empty State */}
       {query.length > 2 && mockResults.length === 0 && (
         <div className="py-24 text-center">
-          <p className="font-serif text-2xl text-black/30">No archives match your request.</p>
+          <p className="font-serif font-bold text-2xl text-black/90 font-medium font-medium">No archives match your request.</p>
         </div>
       )}
 

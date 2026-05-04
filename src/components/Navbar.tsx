@@ -120,7 +120,7 @@ export default function Navbar() {
                   ref={svgTextRef}
                   x="0"
                   y="38"
-                  className="font-serif"
+                  className="font-serif font-bold"
                   style={{ 
                     fontSize: "48px", 
                     letterSpacing: "-0.02em",

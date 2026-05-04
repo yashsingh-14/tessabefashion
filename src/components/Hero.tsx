@@ -66,7 +66,7 @@ export default function Hero() {
           Mumbai Heritage Since 2013
         </span>
         
-        <h1 className="hero-title font-serif text-4xl md:text-7xl lg:text-8xl tracking-widest mb-6 leading-tight flex flex-col pointer-events-auto">
+        <h1 className="hero-title font-serif font-bold text-4xl md:text-7xl lg:text-8xl tracking-widest mb-6 leading-tight flex flex-col pointer-events-auto">
           <div className="overflow-hidden"><span className="block">Master Tailoring.</span></div>
           <div className="overflow-hidden"><span className="block">Arama Legacy.</span></div>
         </h1>

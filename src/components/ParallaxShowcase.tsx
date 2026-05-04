@@ -128,7 +128,7 @@ export default function ParallaxShowcase() {
           {/* Text Side */}
           <div className={`relative flex items-center px-8 md:px-16 lg:px-24 py-24 ${idx % 2 !== 0 ? "lg:order-1" : ""}`}>
             {/* Giant background number */}
-            <span className="showcase-number absolute top-1/2 -translate-y-1/2 left-8 font-serif text-[20vw] lg:text-[15vw] text-black/0 leading-none pointer-events-none select-none" style={{ letterSpacing: "-0.05em" }}>
+            <span className="showcase-number absolute top-1/2 -translate-y-1/2 left-8 font-serif font-bold text-[20vw] lg:text-[15vw] text-black/0 leading-none pointer-events-none select-none" style={{ letterSpacing: "-0.05em" }}>
               0{idx + 1}
             </span>
 
@@ -136,11 +136,11 @@ export default function ParallaxShowcase() {
             <div className="showcase-line absolute left-0 top-[15%] w-[1px] h-[70%] bg-black/10 origin-top hidden lg:block" />
 
             <div className="showcase-text relative z-10 max-w-lg">
-              <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">{item.subtitle}</p>
-              <h3 className="font-serif text-4xl md:text-5xl lg:text-6xl lowercase tracking-tight mb-8" style={{ letterSpacing: "-0.02em" }}>
+              <p className="text-xs uppercase tracking-[0.4em] text-black/70 font-bold mb-4">{item.subtitle}</p>
+              <h3 className="font-serif font-bold text-4xl md:text-5xl lg:text-6xl lowercase tracking-tight mb-8" style={{ letterSpacing: "-0.02em" }}>
                 {item.title}
               </h3>
-              <p className="text-sm md:text-base leading-relaxed text-black/60 mb-10">
+              <p className="text-sm md:text-base leading-relaxed text-black/90 font-medium mb-10">
                 {item.description}
               </p>
               <a href="#" className="inline-flex items-center gap-4 text-xs uppercase tracking-[0.2em] font-medium group">

@@ -27,8 +27,8 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Heading */}
         <div className="text-center mb-16">
-          <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">Testimonials</p>
-          <h2 className="font-serif text-4xl md:text-5xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>
+          <p className="text-xs uppercase tracking-[0.4em] text-black/70 font-bold mb-4">Testimonials</p>
+          <h2 className="font-serif font-bold text-4xl md:text-5xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>
             Words from our patrons
           </h2>
         </div>

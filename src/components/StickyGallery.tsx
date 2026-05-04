@@ -54,7 +54,7 @@ export default function StickyGallery() {
       <div ref={headerRef} className="h-screen w-full grid place-content-center bg-white px-6">
         <div className="text-center">
           <p className="gallery-anim text-xs uppercase tracking-[0.4em] text-gray-500 mb-6">The Gallery</p>
-          <h2 className="gallery-anim font-serif text-4xl md:text-7xl lg:text-8xl lowercase tracking-tight leading-[0.95] text-gray-900" style={{ letterSpacing: "-0.02em" }}>
+          <h2 className="gallery-anim font-serif font-bold text-4xl md:text-7xl lg:text-8xl lowercase tracking-tight leading-[0.95] text-gray-900" style={{ letterSpacing: "-0.02em" }}>
             Craftsmanship<br />in every thread
           </h2>
           <p className="gallery-anim text-sm text-gray-600 mt-8 max-w-md mx-auto leading-relaxed">
@@ -123,7 +123,7 @@ export default function StickyGallery() {
 
       {/* Bottom Branding */}
       <div className="bg-white py-20 text-center overflow-hidden">
-        <h3 className="font-serif text-[14vw] md:text-[10vw] uppercase leading-none bg-gradient-to-r from-neutral-300 to-neutral-400 bg-clip-text text-transparent font-semibold tracking-tight">
+        <h3 className="font-serif font-bold text-[14vw] md:text-[10vw] uppercase leading-none bg-gradient-to-r from-neutral-300 to-neutral-400 bg-clip-text text-transparent font-semibold tracking-tight">
           arama
         </h3>
       </div>

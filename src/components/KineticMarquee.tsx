@@ -64,7 +64,7 @@ export default function KineticMarquee() {
           {Array.from({ length: 6 }).map((_, i) => (
             <span
               key={`r1-${i}`}
-              className="font-serif text-[8vw] md:text-[6vw] uppercase tracking-tight text-black/25 leading-none flex-shrink-0"
+              className="font-serif font-bold text-[8vw] md:text-[6vw] uppercase tracking-tight text-black/25 leading-none flex-shrink-0"
               style={{ letterSpacing: "-0.02em" }}
             >
               {MARQUEE_TEXT_1}
@@ -83,7 +83,7 @@ export default function KineticMarquee() {
           {Array.from({ length: 6 }).map((_, i) => (
             <span
               key={`r2-${i}`}
-              className="font-serif text-[8vw] md:text-[6vw] uppercase tracking-tight text-black/25 leading-none flex-shrink-0 italic"
+              className="font-serif font-bold text-[8vw] md:text-[6vw] uppercase tracking-tight text-black/25 leading-none flex-shrink-0 italic"
               style={{ letterSpacing: "-0.02em" }}
             >
               {MARQUEE_TEXT_2}
@@ -95,8 +95,8 @@ export default function KineticMarquee() {
       {/* Center Statement */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center px-6">
-          <p className="text-xs uppercase tracking-[0.4em] text-black/60 mb-4 font-medium">Since 2013</p>
-          <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl lowercase tracking-tighter text-black leading-[0.9]" style={{ letterSpacing: "-0.03em" }}>
+          <p className="text-xs uppercase tracking-[0.4em] text-black/90 font-medium mb-4 font-medium">Since 2013</p>
+          <h2 className="font-serif font-bold text-4xl md:text-6xl lg:text-7xl lowercase tracking-tighter text-black leading-[0.9]" style={{ letterSpacing: "-0.03em" }}>
             The art of<br />being dressed
           </h2>
           <div className="w-16 h-[1px] bg-black/50 mx-auto mt-8" />

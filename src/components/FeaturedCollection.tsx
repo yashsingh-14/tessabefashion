@@ -42,7 +42,7 @@ export default function FeaturedCollection() {
         
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
           <div>
-            <h2 className="font-serif text-5xl tracking-wide mb-4">Curated Essentials</h2>
+            <h2 className="font-serif font-bold text-5xl tracking-wide mb-4">Curated Essentials</h2>
             <p className="text-sm uppercase tracking-[0.2em] opacity-60">The Foundation of a Modern Wardrobe</p>
           </div>
           <Link href="/collection" className="group flex items-center gap-4 text-xs uppercase tracking-[0.2em] hover:opacity-70 transition-opacity">
@@ -64,7 +64,7 @@ export default function FeaturedCollection() {
               </div>
               <div className="flex justify-between items-start">
                 <div>
-                  <h3 className="font-serif text-lg mb-1">{shirt.name}</h3>
+                  <h3 className="font-serif font-bold text-lg mb-1">{shirt.name}</h3>
                   <p className="text-xs text-neutral-500 uppercase tracking-widest">{shirt.fabric}</p>
                 </div>
                 <span className="text-sm">{shirt.price}</span>

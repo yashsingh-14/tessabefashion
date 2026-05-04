@@ -20,7 +20,7 @@ export default function WebGLShowcase() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 mb-16 text-center">
         <p className="text-xs uppercase tracking-[0.4em] text-white/40 mb-4">The Archives</p>
-        <h2 className="font-serif text-4xl md:text-6xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>
+        <h2 className="font-serif font-bold text-4xl md:text-6xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>
           Infinite dimension
         </h2>
         <p className="text-sm text-white/50 mt-6 max-w-md mx-auto">

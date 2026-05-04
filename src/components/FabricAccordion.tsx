@@ -56,7 +56,7 @@ const AccordionItem = ({ item, isActive, onMouseEnter }: { item: any, isActive: 
       {/* Caption Text */}
       <span
         className={`
-          absolute text-white font-serif text-lg md:text-xl whitespace-nowrap tracking-wide
+          absolute text-white font-serif font-bold text-lg md:text-xl whitespace-nowrap tracking-wide
           transition-all duration-300 ease-in-out z-10 drop-shadow-md
           ${
             isActive
@@ -89,7 +89,7 @@ export default function FabricAccordion() {
           {/* Left Side: Text Content */}
           <div className="w-full lg:w-5/12 text-center lg:text-left">
             <p className="text-xs uppercase tracking-[0.4em] text-gray-400 mb-6 font-semibold">Our Expertise</p>
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif text-gray-900 leading-[0.95] tracking-tight lowercase">
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-gray-900 leading-[0.95] tracking-tight lowercase">
               Discover our<br />signature weaves
             </h2>
             <p className="mt-8 text-lg text-gray-600 max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">

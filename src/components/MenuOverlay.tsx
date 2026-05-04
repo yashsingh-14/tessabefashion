@@ -138,7 +138,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
                     <span className="text-sm text-white/30 font-mono tabular-nums">
                       0{idx + 1}
                     </span>
-                    <span className="font-serif text-5xl md:text-7xl lg:text-8xl lowercase tracking-tight transition-all duration-500 group-hover:translate-x-6 group-hover:text-white/70" style={{ letterSpacing: "-0.02em" }}>
+                    <span className="font-serif font-bold text-5xl md:text-7xl lg:text-8xl lowercase tracking-tight transition-all duration-500 group-hover:translate-x-6 group-hover:text-white/70" style={{ letterSpacing: "-0.02em" }}>
                       {link.label}
                     </span>
                   </Link>
@@ -170,7 +170,7 @@ export default function MenuOverlay({ isOpen, onClose }: MenuOverlayProps) {
         {/* Footer Row */}
         <div ref={footerRef} className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 pt-8 border-t border-white/10">
           <div className="flex items-baseline gap-2">
-            <span className="font-serif text-2xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>tessa</span>
+            <span className="font-serif font-bold text-2xl lowercase tracking-tight" style={{ letterSpacing: "-0.02em" }}>tessa</span>
             <span className="font-sans text-[10px] lowercase tracking-wide opacity-60">be fashion</span>
           </div>
           <div className="flex gap-8">
