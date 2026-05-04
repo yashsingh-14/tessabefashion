@@ -108,8 +108,8 @@ const CleanWireframeAnalytics = () => {
   ];
 
   return (
-    <div ref={containerRef} className="min-h-screen bg-gray-50 font-light">
-      <div className="max-w-7xl mx-auto p-12">
+    <div ref={containerRef} className="bg-gray-50 font-light pt-16 md:pt-24 pb-0">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
         <div className="mb-16">
           <h1 

@@ -4,6 +4,7 @@ import KineticMarquee from "@/components/KineticMarquee";
 import MaskedVideoReveal from "@/components/MaskedVideoReveal";
 import ParallaxShowcase from "@/components/ParallaxShowcase";
 import FabricStats from "@/components/FabricStats";
+import FabricAccordion from "@/components/FabricAccordion";
 import StickyGallery from "@/components/StickyGallery";
 import ZoomShowcase from "@/components/ZoomShowcase";
 import FabricSpotlight from "@/components/FabricSpotlight";
@@ -30,6 +31,9 @@ export default function Home() {
 
       {/* 5. PROOF — Hard numbers that build credibility */}
       <FabricStats />
+
+      {/* 5.5. EXPERTISE — Interactive image accordion */}
+      <FabricAccordion />
 
       {/* 6. DESIRE — Visual feast, immersive gallery */}
       <StickyGallery />
