@@ -63,12 +63,12 @@ export default function Hero() {
       {/* Cinematic Intro Text */}
       <div className="absolute inset-0 flex flex-col items-center justify-center text-white z-10 px-4 text-center mt-16 pointer-events-none">
         <span className="hero-small-text text-xs md:text-sm uppercase tracking-[0.4em] mb-6 font-light">
-          The Fabric of Luxury
+          Mumbai Heritage Since 2013
         </span>
         
-        <h1 className="hero-title font-serif text-5xl md:text-7xl lg:text-8xl tracking-widest mb-6 leading-tight flex flex-col pointer-events-auto">
-          <div className="overflow-hidden"><span className="block">Bespoke Shirts.</span></div>
-          <div className="overflow-hidden"><span className="block">Pure Elegance.</span></div>
+        <h1 className="hero-title font-serif text-4xl md:text-7xl lg:text-8xl tracking-widest mb-6 leading-tight flex flex-col pointer-events-auto">
+          <div className="overflow-hidden"><span className="block">Master Tailoring.</span></div>
+          <div className="overflow-hidden"><span className="block">Arama Legacy.</span></div>
         </h1>
       </div>
 

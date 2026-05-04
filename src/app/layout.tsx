@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
+import Watermark from "@/components/Watermark";
 import "./globals.css";
 
 const inter = Inter({
@@ -28,10 +29,23 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${playfair.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col font-sans bg-[#E9E6E1] text-[#000000]">
+      <body className="min-h-full flex flex-col font-sans bg-[#E9E6E1] text-[#000000] select-none">
+        <Watermark />
         <SmoothScroll>
           {children}
         </SmoothScroll>
+
+        {/* Anti-Copy Script (Optional Protection) */}
+        <script dangerouslySetInnerHTML={{ __html: `
+          document.addEventListener('contextmenu', (e) => e.preventDefault());
+          document.onkeydown = function(e) {
+            if(e.keyCode == 123) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
+          }
+        `}} />
       </body>
     </html>
   );

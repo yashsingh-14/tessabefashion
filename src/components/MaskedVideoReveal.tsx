@@ -61,11 +61,11 @@ export default function MaskedVideoReveal() {
         className="sticky top-0 h-screen flex flex-col items-center justify-center text-center px-6 z-10"
       >
         <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-6">The Process</p>
-        <h2 className="font-serif text-5xl md:text-7xl lg:text-8xl lowercase tracking-tight text-black mb-6" style={{ letterSpacing: "-0.02em" }}>
+        <h2 className="font-serif text-4xl md:text-7xl lg:text-8xl lowercase tracking-tight text-black mb-6" style={{ letterSpacing: "-0.02em" }}>
           Crafted by hand
         </h2>
         <p className="text-sm md:text-base text-black/50 max-w-md leading-relaxed">
-          Every stitch is a commitment to perfection. Every thread tells the story of generations of master craftsmen.
+          Every stitch is a commitment to perfection. Every thread tells the story of our Mumbai heritage and 11+ years of craftsmanship.
         </p>
       </div>
 

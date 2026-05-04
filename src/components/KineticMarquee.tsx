@@ -9,8 +9,8 @@ if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
 }
 
-const MARQUEE_TEXT_1 = "UNCOMPROMISING QUALITY • MASTER TAILORING • FINEST FABRICS • ";
-const MARQUEE_TEXT_2 = "BESPOKE ELEGANCE • ITALIAN COTTON • HANDCRAFTED DETAILS • ";
+const MARQUEE_TEXT_1 = "ARAMA HERITAGE • MASTER TAILORING • MUMBAI CRAFTSMANSHIP • ";
+const MARQUEE_TEXT_2 = "PRINTED COTTON • WOVEN EXCELLENCE • HANDCRAFTED DETAILS • ";
 
 export default function KineticMarquee() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -95,8 +95,8 @@ export default function KineticMarquee() {
       {/* Center Statement */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center px-6">
-          <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">Since 2024</p>
-          <h2 className="font-serif text-4xl md:text-6xl lg:text-7xl lowercase tracking-tight text-black" style={{ letterSpacing: "-0.02em" }}>
+          <p className="text-xs uppercase tracking-[0.4em] text-black/40 mb-4">Since 2013</p>
+          <h2 className="font-serif text-3xl md:text-5xl lg:text-6xl lowercase tracking-tight text-black" style={{ letterSpacing: "-0.02em" }}>
             The art of<br />being dressed
           </h2>
           <div className="w-16 h-[1px] bg-black/30 mx-auto mt-8" />

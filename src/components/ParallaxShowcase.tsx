@@ -12,15 +12,15 @@ if (typeof window !== "undefined") {
 
 const showcaseItems = [
   {
-    title: "The Perfect Weave",
+    title: "The Agarwal Standard",
     subtitle: "Egyptian Cotton",
-    description: "Each yarn is hand-selected for its length, luster, and strength. The result is a fabric that drapes like water and feels like a second skin.",
+    description: "Each yarn is hand-selected by our founding partners for its length, luster, and strength. The result is a fabric that drapes like water and feels like a second skin \u2014 a testament to 11 years of mastery.",
     image: "/images/pexels-chris-f-38966-7755387.jpg",
   },
   {
-    title: "Nature's Finest",
+    title: "Meticulous Processing",
     subtitle: "Pure Irish Linen",
-    description: "Harvested from the flax fields of Normandy, our linen undergoes a meticulous softening process while retaining its natural, breathable character.",
+    description: "Harvested from the flax fields of Normandy, our linen undergoes Arama's meticulous proprietary softening process while retaining its natural, breathable character, refined for the modern wardrobe.",
     image: "/images/pexels-bem-partington-1065018897-20531142.jpg",
   },
 ];
@@ -104,7 +104,7 @@ export default function ParallaxShowcase() {
   }, { scope: sectionRef });
 
   return (
-    <section ref={sectionRef} className="bg-[#E9E6E1]">
+    <section ref={sectionRef} className="bg-[#E9E6E1] relative">
       {showcaseItems.map((item, idx) => (
         <div
           key={item.title}

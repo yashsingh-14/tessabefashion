@@ -10,10 +10,10 @@ if (typeof window !== "undefined") {
 }
 
 const stats = [
-  { number: 120, suffix: "+", label: "Premium Fabrics" },
-  { number: 15, suffix: "", label: "Countries Sourced" },
-  { number: 48, suffix: "hrs", label: "Crafting Time" },
-  { number: 25, suffix: "k+", label: "Shirts Delivered" },
+  { number: 11, suffix: "+", label: "Years of Mastery" },
+  { number: 15, suffix: "+", label: "Countries Exported" },
+  { number: 100, suffix: "+", label: "Premium Fabrics" },
+  { number: 50, suffix: "Cr+", label: "Annual Turnover" },
 ];
 
 export default function FabricStats() {

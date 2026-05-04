@@ -32,6 +32,7 @@ const MOCK_PRODUCT = {
   ]
 };
 
+
 export default function ProductPage() {
   const params = useParams();
   const [mounted, setMounted] = useState(false);
@@ -43,7 +44,7 @@ export default function ProductPage() {
   if (!mounted) return null;
 
   return (
-    <main className="min-h-screen pt-32 pb-24 px-6 md:px-12 bg-white text-black">
+    <main className="min-h-screen pt-32 pb-24 px-6 md:px-12 bg-white text-black relative">
       <div className="max-w-[1400px] mx-auto">
         
         {/* Breadcrumbs */}

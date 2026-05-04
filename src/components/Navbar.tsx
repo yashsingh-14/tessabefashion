@@ -87,7 +87,7 @@ export default function Navbar() {
 
     // Action buttons slide in from right with stagger
     if (actionsRef.current) {
-      const buttons = actionsRef.current.querySelectorAll("button");
+      const buttons = actionsRef.current.querySelectorAll("button, a");
       tl.fromTo(
         buttons,
         { x: 40, opacity: 0 },
@@ -142,10 +142,10 @@ export default function Navbar() {
 
           {/* Right: Actions */}
           <div ref={actionsRef} className="flex items-center gap-6">
-            <button className="hidden md:flex items-center gap-2 group" style={{ opacity: 0 }}>
+            <Link href="/search" className="hidden md:flex items-center gap-2 group" style={{ opacity: 0 }}>
               <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:opacity-70 transition-opacity">Search</span>
               <Search className="w-4 h-4 stroke-[1.5] group-hover:opacity-70 transition-opacity" />
-            </button>
+            </Link>
             
             <button className="hidden md:flex items-center gap-2 group" style={{ opacity: 0 }}>
               <span className="text-xs uppercase tracking-[0.2em] font-medium group-hover:opacity-70 transition-opacity">Cart</span>
@@ -153,9 +153,9 @@ export default function Navbar() {
             </button>
 
             {/* Mobile specific icons */}
-            <button className="md:hidden" style={{ opacity: 0 }}>
+            <Link href="/search" className="md:hidden" style={{ opacity: 0 }}>
               <Search className="w-5 h-5 stroke-[1.5]" />
-            </button>
+            </Link>
             <button className="md:hidden" style={{ opacity: 0 }}>
               <ShoppingBag className="w-5 h-5 stroke-[1.5]" />
             </button>
