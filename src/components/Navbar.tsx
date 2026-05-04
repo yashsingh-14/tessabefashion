@@ -11,17 +11,18 @@ export default function Navbar() {
   const navRef = useRef<HTMLDivElement>(null);
   const menuBtnRef = useRef<HTMLButtonElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
+  const svgTextRef = useRef<SVGTextElement>(null);
+  const beFashionRef = useRef<HTMLSpanElement>(null);
   const actionsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    // Entrance animation timeline on page load
-    const tl = gsap.timeline({ delay: 0.5 });
+    const tl = gsap.timeline({ delay: 0.3 });
 
-    // Fade in the entire nav bar
+    // Fade in the navbar container
     tl.fromTo(
       navRef.current,
       { opacity: 0 },
-      { opacity: 1, duration: 0.6, ease: "power2.out" }
+      { opacity: 1, duration: 0.4, ease: "power2.out" }
     );
 
     // Menu button slides in from left
@@ -29,16 +30,58 @@ export default function Navbar() {
       menuBtnRef.current,
       { x: -40, opacity: 0 },
       { x: 0, opacity: 1, duration: 0.7, ease: "power3.out" },
-      "-=0.3"
+      "-=0.2"
     );
 
-    // Logo drops in from top
+    // Show logo container
     if (logoRef.current) {
+      tl.set(logoRef.current, { opacity: 1 }, "-=0.5");
+    }
+
+    // Handwriting animation for "tessa" SVG text
+    if (svgTextRef.current) {
+      const textLength = svgTextRef.current.getComputedTextLength?.() || 200;
+      
+      // Set initial state: text is "invisible" (stroke dash hides it)
+      gsap.set(svgTextRef.current, {
+        strokeDasharray: textLength,
+        strokeDashoffset: textLength,
+        fill: "transparent",
+        stroke: "currentColor",
+        strokeWidth: 1.5,
+      });
+
+      // Animate: draw the stroke (handwriting effect)
+      tl.to(
+        svgTextRef.current,
+        {
+          strokeDashoffset: 0,
+          duration: 1.8,
+          ease: "power2.inOut",
+        },
+        "-=0.3"
+      );
+
+      // Then fill in the text color
+      tl.to(
+        svgTextRef.current,
+        {
+          fill: "currentColor",
+          strokeWidth: 0,
+          duration: 0.6,
+          ease: "power2.out",
+        },
+        "-=0.4"
+      );
+    }
+
+    // "be fashion" fades in after
+    if (beFashionRef.current) {
       tl.fromTo(
-        logoRef.current,
-        { y: -30, opacity: 0 },
-        { y: 0, opacity: 1, duration: 0.7, ease: "back.out(1.4)" },
-        "-=0.5"
+        beFashionRef.current,
+        { opacity: 0, x: -10 },
+        { opacity: 0.9, x: 0, duration: 0.6, ease: "power3.out" },
+        "-=0.3"
       );
     }
 
@@ -64,11 +107,36 @@ export default function Navbar() {
             <span className="hidden md:block text-xs uppercase tracking-[0.2em] font-medium group-hover:opacity-70 transition-opacity">Menu</span>
           </button>
 
-          {/* Center: Logo */}
+          {/* Center: Logo with Handwriting Animation */}
           <div ref={logoRef} className="absolute left-1/2 -translate-x-1/2" style={{ opacity: 0 }}>
             <Link href="/" className="flex flex-col items-start group">
-              <span className="font-serif text-4xl md:text-5xl lowercase tracking-tight leading-none transition-transform duration-500 group-hover:-translate-y-1" style={{ letterSpacing: "-0.02em" }}>tessa</span>
-              <span className="font-sans text-[11px] md:text-xs lowercase tracking-wide opacity-90 mt-1 ml-14 md:ml-20 transition-opacity duration-500 group-hover:opacity-100">be fashion</span>
+              {/* SVG Text for handwriting animation */}
+              <svg 
+                viewBox="0 0 160 50" 
+                className="h-[40px] md:h-[48px] w-auto overflow-visible transition-transform duration-500 group-hover:-translate-y-1"
+                aria-label="tessa"
+              >
+                <text
+                  ref={svgTextRef}
+                  x="0"
+                  y="38"
+                  className="font-serif"
+                  style={{ 
+                    fontSize: "48px", 
+                    letterSpacing: "-0.02em",
+                    fill: "transparent",
+                  }}
+                >
+                  tessa
+                </text>
+              </svg>
+              <span 
+                ref={beFashionRef}
+                className="font-sans text-[11px] md:text-xs lowercase tracking-wide mt-0 ml-14 md:ml-20"
+                style={{ opacity: 0 }}
+              >
+                be fashion
+              </span>
             </Link>
           </div>
 
