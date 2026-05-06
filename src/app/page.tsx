@@ -30,7 +30,7 @@ export default function Home() {
       <ParallaxShowcase />
 
       {/* 5. PROOF — Hard numbers that build credibility */}
-      <FabricStats />
+      {/* <FabricStats /> */}
 
       {/* 5.5. EXPERTISE — Interactive image accordion */}
       <FabricAccordion />
